@@ -1,0 +1,18 @@
+{
+  "revenueByMonth": [
+    { "month": "Nov", "revenue": 12400 },
+    { "month": "Dec", "revenue": 14200 },
+    { "month": "Jan", "revenue": 13800 },
+    { "month": "Feb", "revenue": 15600 },
+    { "month": "Mar", "revenue": 16900 },
+    { "month": "Apr", "revenue": 15200 }
+  ],
+  "membersByMonth": [
+    { "month": "Nov", "count": 118 },
+    { "month": "Dec", "count": 124 },
+    { "month": "Jan", "count": 129 },
+    { "month": "Feb", "count": 136 },
+    { "month": "Mar", "count": 142 },
+    { "month": "Apr", "count": 148 }
+  ]
+}

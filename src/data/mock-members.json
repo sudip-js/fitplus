@@ -1,0 +1,68 @@
+[
+  {
+    "id": "m1",
+    "name": "Arjun Mehta",
+    "phone": "+91 98765 43210",
+    "email": "arjun.mehta@gmail.com",
+    "planId": "p2",
+    "status": "active",
+    "joinDate": "2024-08-15",
+    "trainerId": "t1",
+    "expiresAt": "2026-05-10"
+  },
+  {
+    "id": "m2",
+    "name": "Sneha Krishnan",
+    "phone": "+91 87654 32109",
+    "email": "sneha.k@yahoo.in",
+    "planId": "p3",
+    "status": "active",
+    "joinDate": "2025-01-20",
+    "trainerId": "t2",
+    "expiresAt": "2026-12-20"
+  },
+  {
+    "id": "m3",
+    "name": "Vikram Desai",
+    "phone": "+91 91234 56780",
+    "email": "vikram.desai@outlook.com",
+    "planId": "p1",
+    "status": "paused",
+    "joinDate": "2023-11-03",
+    "trainerId": "t1",
+    "expiresAt": "2026-02-01"
+  },
+  {
+    "id": "m4",
+    "name": "Kavya Nair",
+    "phone": "+91 99887 76655",
+    "email": "kavya.nair@gmail.com",
+    "planId": "p2",
+    "status": "active",
+    "joinDate": "2025-03-08",
+    "trainerId": "t2",
+    "expiresAt": "2026-06-08"
+  },
+  {
+    "id": "m5",
+    "name": "Rohit Sharma",
+    "phone": "+91 90909 80808",
+    "email": "rohit.s@gmail.com",
+    "planId": "p1",
+    "status": "expiring",
+    "joinDate": "2024-09-10",
+    "trainerId": "t3",
+    "expiresAt": "2026-04-15"
+  },
+  {
+    "id": "m6",
+    "name": "Ananya Reddy",
+    "phone": "+91 93456 78901",
+    "email": "ananya.r@gmail.com",
+    "planId": "p1",
+    "status": "active",
+    "joinDate": "2025-02-01",
+    "trainerId": "t1",
+    "expiresAt": "2026-04-03"
+  }
+]

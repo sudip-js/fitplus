@@ -1,0 +1,46 @@
+[
+  {
+    "id": "e1",
+    "title": "Shop rent — Koramangala",
+    "amount": 85000,
+    "category": "rent",
+    "date": "2026-04-01",
+    "notes": "April rent"
+  },
+  {
+    "id": "e2",
+    "title": "BESCOM electricity",
+    "amount": 12400,
+    "category": "electricity",
+    "date": "2026-03-28"
+  },
+  {
+    "id": "e3",
+    "title": "Staff salary — March",
+    "amount": 62000,
+    "category": "staff_salary",
+    "date": "2026-03-31",
+    "notes": "Front desk + cleaners"
+  },
+  {
+    "id": "e4",
+    "title": "AC servicing",
+    "amount": 4500,
+    "category": "maintenance",
+    "date": "2026-03-22"
+  },
+  {
+    "id": "e5",
+    "title": "Dumbbell set & plates",
+    "amount": 28500,
+    "category": "equipment",
+    "date": "2026-03-10"
+  },
+  {
+    "id": "e6",
+    "title": "Stationery & misc",
+    "amount": 1200,
+    "category": "miscellaneous",
+    "date": "2026-03-15"
+  }
+]

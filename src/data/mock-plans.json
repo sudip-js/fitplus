@@ -1,0 +1,29 @@
+[
+  {
+    "id": "p1",
+    "name": "Basic",
+    "price": 799,
+    "currency": "INR",
+    "durationMonths": 1,
+    "features": ["Floor + cardio", "Locker", "Timing 6am–10pm"],
+    "popular": false
+  },
+  {
+    "id": "p2",
+    "name": "Pro",
+    "price": 1999,
+    "currency": "INR",
+    "durationMonths": 3,
+    "features": ["All Basic perks", "2 PT sessions / month", "Steam once a week"],
+    "popular": true
+  },
+  {
+    "id": "p3",
+    "name": "Elite",
+    "price": 6999,
+    "currency": "INR",
+    "durationMonths": 12,
+    "features": ["Unlimited classes", "Diet consult", "Guest passes ×4"],
+    "popular": false
+  }
+]

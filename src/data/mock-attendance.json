@@ -1,0 +1,8 @@
+[
+  { "id": "att1", "memberId": "m1", "date": "2026-04-03", "checkedInAt": "2026-04-03T07:15:00+05:30" },
+  { "id": "att2", "memberId": "m2", "date": "2026-04-03", "checkedInAt": "2026-04-03T08:02:00+05:30" },
+  { "id": "att3", "memberId": "m4", "date": "2026-04-03", "checkedInAt": "2026-04-03T18:40:00+05:30" },
+  { "id": "att4", "memberId": "m1", "date": "2026-04-02", "checkedInAt": "2026-04-02T06:55:00+05:30" },
+  { "id": "att5", "memberId": "m5", "date": "2026-04-02", "checkedInAt": "2026-04-02T19:10:00+05:30" },
+  { "id": "att6", "memberId": "m6", "date": "2026-04-02", "checkedInAt": "2026-04-02T17:30:00+05:30" }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "t1",
+    "name": "Rahul Verma",
+    "phone": "+91 98100 11223",
+    "specialty": "Weight training",
+    "status": "active"
+  },
+  {
+    "id": "t2",
+    "name": "Divya Menon",
+    "phone": "+91 98222 33445",
+    "specialty": "Yoga",
+    "status": "active"
+  },
+  {
+    "id": "t3",
+    "name": "Imran Khan",
+    "phone": "+91 98333 55667",
+    "specialty": "Cardio",
+    "status": "inactive"
+  }
+]

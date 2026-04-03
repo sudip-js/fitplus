@@ -1,0 +1,56 @@
+[
+  {
+    "id": "pay1",
+    "memberId": "m1",
+    "amount": 1999,
+    "currency": "INR",
+    "date": "2026-04-03",
+    "status": "paid",
+    "method": "upi"
+  },
+  {
+    "id": "pay2",
+    "memberId": "m2",
+    "amount": 6999,
+    "currency": "INR",
+    "date": "2026-04-03",
+    "status": "paid",
+    "method": "card"
+  },
+  {
+    "id": "pay3",
+    "memberId": "m4",
+    "amount": 1999,
+    "currency": "INR",
+    "date": "2026-04-02",
+    "status": "pending",
+    "method": "upi"
+  },
+  {
+    "id": "pay4",
+    "memberId": "m5",
+    "amount": 799,
+    "currency": "INR",
+    "date": "2026-03-20",
+    "status": "overdue",
+    "method": "cash"
+  },
+  {
+    "id": "pay5",
+    "memberId": "m3",
+    "amount": 799,
+    "currency": "INR",
+    "date": "2026-03-24",
+    "status": "paid",
+    "method": "cash"
+  },
+  {
+    "id": "pay6",
+    "memberId": "m6",
+    "amount": 799,
+    "currency": "INR",
+    "date": "2026-04-01",
+    "status": "pending",
+    "method": "upi"
+  }
+]
