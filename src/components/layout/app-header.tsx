@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import { Bell, LogOut, Moon, Search, Sun } from "lucide-react"
+import { Bell, LogOut, Monitor, Moon, Search, Sun } from "lucide-react"
 import { toast } from "sonner"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
@@ -9,12 +9,16 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Input } from "@/components/ui/input"
 import { isAdmin, useAuthStore } from "@/store/useAuthStore"
 import type { ReactNode } from "react"
+
+type ThemeMode = "light" | "dark" | "system"
 
 interface AppHeaderProps {
   leftSlot?: ReactNode
@@ -24,24 +28,13 @@ export function AppHeader({ leftSlot }: AppHeaderProps) {
   const { user, theme, setTheme, signOut, signInAsAdmin } = useAuthStore()
   const [q, setQ] = useState("")
 
-  const cycleTheme = () => {
-    const order = ["light", "dark", "system"] as const
-    const next = order[(order.indexOf(theme) + 1) % order.length]
-    setTheme(next)
-    toast.success(
-      next === "system"
-        ? "Theme follows system"
-        : `Theme: ${next}`,
-    )
-  }
-
-  const icon =
+  const themeIcon =
     theme === "dark" ? (
       <Moon className="h-4 w-4" />
     ) : theme === "light" ? (
       <Sun className="h-4 w-4" />
     ) : (
-      <Sun className="h-4 w-4 opacity-70" />
+      <Monitor className="h-4 w-4" />
     )
 
   return (
@@ -77,15 +70,41 @@ export function AppHeader({ leftSlot }: AppHeaderProps) {
           >
             <Search className="h-4 w-4" />
           </Button>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="rounded-xl"
-            onClick={cycleTheme}
-            title="Toggle theme"
-          >
-            {icon}
-          </Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="rounded-xl"
+                title="Theme"
+              >
+                {themeIcon}
+                <span className="sr-only">Theme</span>
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-44 rounded-xl">
+              <DropdownMenuLabel>Theme</DropdownMenuLabel>
+              <DropdownMenuRadioGroup
+                value={theme}
+                onValueChange={(value) =>
+                  setTheme(value as ThemeMode)
+                }
+              >
+                <DropdownMenuRadioItem value="light" className="gap-2">
+                  <Sun className="h-4 w-4 opacity-70" />
+                  Light
+                </DropdownMenuRadioItem>
+                <DropdownMenuRadioItem value="dark" className="gap-2">
+                  <Moon className="h-4 w-4 opacity-70" />
+                  Dark
+                </DropdownMenuRadioItem>
+                <DropdownMenuRadioItem value="system" className="gap-2">
+                  <Monitor className="h-4 w-4 opacity-70" />
+                  System
+                </DropdownMenuRadioItem>
+              </DropdownMenuRadioGroup>
+            </DropdownMenuContent>
+          </DropdownMenu>
           <Button
             variant="ghost"
             size="icon"
